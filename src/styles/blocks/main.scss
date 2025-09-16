@@ -3,8 +3,9 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(1, $card-width);
-  gap: 48px 46px;
+  gap: $gap-vertical $gap-horizontal;
   padding: $catalog-padding-vertical $catalog-padding-horizontal;
+  overflow: visible;
 
   @media (min-width: 488px) {
     grid-template-columns: repeat(2, $card-width);
